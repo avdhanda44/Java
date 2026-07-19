@@ -11,6 +11,8 @@
     "strings": true
   },
   "editor.suggestSelection": "first",
+  "editor.tabCompletion": "on",
+  "editor.wordBasedSuggestions": "matchingDocuments",
   "java.completion.enabled": true,
   "java.project.outputPath": "compile"
 }
