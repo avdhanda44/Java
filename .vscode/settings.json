@@ -2,7 +2,7 @@
   "code-runner.runInTerminal": true,
   "code-runner.clearPreviousOutput": true,
   "code-runner.executorMap": {
-    "java": "cd $dir && mkdir -p compile && javac -d compile $fileName && java -cp compile $fileNameWithoutExt"
+    "java": "cd \"$workspaceRoot\" && mkdir -p compile && javac -d compile $fullFileName && java -cp compile $fileNameWithoutExt"
   },
   "java.debug.settings.console": "integratedTerminal",
   "editor.quickSuggestions": {
