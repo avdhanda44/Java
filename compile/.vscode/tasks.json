@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile active Java file",
+            "type": "shell",
+            "command": "mkdir -p compile && javac -d compile \"${file}\"",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$javac"
+        },
+        {
+            "label": "Compile all Java files",
+            "type": "shell",
+            "command": "mkdir -p compile && find . -maxdepth 1 -name '*.java' -exec javac -d compile {} +",
+            "group": "build",
+            "problemMatcher": "$javac"
+        }
+    ]
+}
