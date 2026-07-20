@@ -71,13 +71,12 @@ public class Array {
 
         //Find the maximum & minimum number in an array of integers. 
 
-        Scanner sc1 = new Scanner(System.in);
         System.out.print("Enter the number of elements you want to enter: ");
-        int p = sc1.nextInt();
+        int p = sc.nextInt();
         int[] arr1 = new int[p];
         System.out.println("Enter the elements:");
         for (int i = 0; i < p; i++) {
-            arr1[i] = sc1.nextInt();
+            arr1[i] = sc.nextInt();
         }
         int max = arr1[0];
         int min = arr1[0];
@@ -95,14 +94,13 @@ public class Array {
         // Take an array of numbers as input and check if it is an array sorted in ascending order.
         // Eg : { 1, 2, 4, 7 } is sorted in ascending order.
         //       {3, 4, 6, 2} is not sorted in ascending order.
-        Scanner sc2 = new Scanner(System.in);
         System.out.print("Enter the number of elements you want to enter: ");
-        int q = sc2.nextInt();
+        int q = sc.nextInt();
         int[] arr2 = new int[q];
-        
+
         System.out.println("Enter the elements:");
         for (int i = 0; i < q; i++) {
-            arr2[i] = sc2.nextInt();
+            arr2[i] = sc.nextInt();
         }
         boolean isSorted = true;
         for (int i = 0; i < q - 1; i++) {
@@ -116,5 +114,7 @@ public class Array {
         } else {
             System.out.println("The array is not sorted in ascending order.");
         }
+
+        sc.close();
     }
 }
