@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Recursion",
+      "request": "launch",
+      "mainClass": "Recursion",
+      "projectName": "JAVA_ec8e56ab"
+    },
+    {
+      "type": "java",
       "name": "Launch ButterflyPattern (Integrated Terminal)",
       "request": "launch",
       "mainClass": "ButterflyPattern",

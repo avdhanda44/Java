@@ -2,11 +2,17 @@
   "code-runner.runInTerminal": true,
   "code-runner.clearPreviousOutput": true,
   "code-runner.executorMap": {
-    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt"
+    "java": "cd \"$workspaceRoot\" && mkdir -p compile && javac -d compile $fullFileName && java -cp compile $fileNameWithoutExt"
   },
-  "java.debug.settings.console": "integratedTerminal"
-}
-{
-    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx4G -Xms100m -Xlog:disable",
-    "java.project.outputPath": "compile"
+  "java.debug.settings.console": "integratedTerminal",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
+  "editor.suggestSelection": "first",
+  "editor.tabCompletion": "on",
+  "editor.wordBasedSuggestions": "matchingDocuments",
+  "java.completion.enabled": true,
+  "java.project.outputPath": "compile"
 }

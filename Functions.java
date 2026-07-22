@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.math.BigInteger;
 
 public class Functions {
     public static void printMyName(String name) {
@@ -13,13 +14,13 @@ public class Functions {
         return a * b;
     }
 
-    public static int factorial(int n) {
+    public static BigInteger factorial(int n) {
         if (n < 0) {
             throw new IllegalArgumentException("Factorial is not defined for negative numbers.");
         }
-        int result = 1;
+        BigInteger result = BigInteger.ONE;
         for (int i = 1; i <= n; i++) {
-            result *= i;
+            result = result.multiply(BigInteger.valueOf(i));
         }
         return result;
     }
